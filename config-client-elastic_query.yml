@@ -9,6 +9,14 @@ server:
 elastic-query-config:
   text-field: text
 
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8081/auth/realms/microservices-realm
+          jwk-set-uri: http://localhost:8081/auth/realms/microservices-realm/protocol/openid-connect/certs
+
 elastic-config:
   index-name: twitter-index
   connection-url: http://localhost:9200
