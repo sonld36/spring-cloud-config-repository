@@ -37,8 +37,6 @@ spring:
     data: classpath:init-data.sql
     initialization-mode: always
 
-
-
 elastic-config:
   index-name: twitter-index
   connection-url: http://localhost:9200
